@@ -12,10 +12,10 @@ public class MyFirstGame {
 			while (userNumber != compNumber) {
 			if (userNumber < compNumber) {
 				System.out.println("Введенное вами число (" + userNumber + ") меньше того, что загадал компьютер");
-				userNumber ++;
+				userNumber++;
 			} else if (userNumber > compNumber) {
 				System.out.println("Введенное вами число (" + userNumber + ") больше того, что загадал компьютер");
-				userNumber --;
+				userNumber--;
 				}
 			}
 		System.out.println("Вы угадали! Это число: " + userNumber);	
