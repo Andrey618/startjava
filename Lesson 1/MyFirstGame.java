@@ -1,14 +1,14 @@
 public class MyFirstGame {	
 	
 	public static void main(String[] args) {
-		int compNumber = 65;
+		int compNumber = 0;
 		int userNumber = 0;
 	
 		System.out.println("Компьютер загадал число: " + compNumber);				
 		
-		if (compNumber == userNumber) {
-			System.out.println("Вы угадали с первого раза! Это число: " + userNumber);
-		} else {
+		// if (compNumber == userNumber) {
+		// 	System.out.println("Вы угадали с первого раза! Это число: " + userNumber);
+		// } else {
 			while (userNumber != compNumber) {
 			if (userNumber < compNumber) {
 				System.out.println("Введенное вами число (" + userNumber + ") меньше того, что загадал компьютер");
@@ -19,7 +19,7 @@ public class MyFirstGame {
 				}
 			}
 		System.out.println("Вы угадали! Это число: " + userNumber);	
-		}
+		// }
 	}
 }		
 
