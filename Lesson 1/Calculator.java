@@ -5,7 +5,7 @@ public class Calculator {
 		int secondNumber = 5;
 		String sign = "^";
 
-		if (sign == "+"){
+		if (sign == "+") {
 			System.out.println(firstNumber + secondNumber);
 		} else if (sign == "-") {
 			System.out.println(firstNumber - secondNumber);
@@ -19,7 +19,7 @@ public class Calculator {
 				result *= firstNumber;
 			}
 			System.out.println(result);
-		} else if (sign == "%"){
+		} else if (sign == "%") {
 			System.out.println(firstNumber % secondNumber);
 		}
 	}
