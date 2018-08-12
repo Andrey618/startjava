@@ -7,7 +7,7 @@ public class CalculatorTest {
 		calc.setSecondNumber(5);
 		calc.setSign('+');
 
-		System.out.println("Test about main class is working");
+		System.out.println("Test: is main class is working?");
 
 		System.out.println(calc.getResult());
 

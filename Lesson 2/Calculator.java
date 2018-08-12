@@ -3,20 +3,31 @@ public class Calculator {
 	private int firstNumber;
 	private int secondNumber;
 	private char sign;
+	private double resultValue;
 
 	public void setFirstNumber(int firstNumber) {
 		this.firstNumber = firstNumber;
+	// public void setFirstNumber(int fn) {	
+	// 	firstNumber = fn;
 	}
-
 	public void setSecondNumber(int secondNumber) {
 		this.secondNumber = secondNumber;
+	// public void setSecondNumber(int sn) {
+	// 	secondNumber = sn;
 	}
 
-	public void setSign(char firstNumber) {
+	public void setSign(char sign) {
 		this.sign = sign;
+	// public void setSign(char si) {
+	// 	sign = si;
 	}
 
 	public double getResult() {
+		resultValue = calcalateResult(firstNumber, secondNumber, sign);
+		return resultValue;
+	}
+
+	private double calcalateResult(int firstNumber, int secondNumber, char sign) {
 		double result = 0;
 		if (sign == '+') {
 			result = firstNumber + secondNumber;
@@ -34,6 +45,7 @@ public class Calculator {
 		} else if (sign == '%') {
 			result = firstNumber % secondNumber;
 		}
+		result = 10;
 		return result;
 	}
 
