@@ -1,7 +1,9 @@
 public class Calculator {	
+	int firstNumber;
+	char mathOperator;
+	int secondNumber;
 	
-	public double calcalateResult(int firstNumber, char mathOperator,
-									int secondNumber) {
+	public double calculateResult() {
 		double result = 0;
 
 		switch(mathOperator) {
