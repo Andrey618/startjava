@@ -45,7 +45,7 @@ public class Calculator {
 		} else if (sign == '%') {
 			result = firstNumber % secondNumber;
 		}
-		result = 10;
+		// result = 10;
 		return result;
 	}
 
