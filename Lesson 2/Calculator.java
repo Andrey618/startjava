@@ -1,19 +1,7 @@
-import java.util.Scanner;
-
 public class Calculator {	
 	
-	public double calcalateResult() {
-		Scanner scan = new Scanner(System.in);
-		
-		System.out.print("Введите первое число: ");
-		int firstNumber = scan.nextInt();
-
-		System.out.print("Введите знак математической операции: ");
-		char mathOperator = scan.next().charAt(0);
-
-		System.out.print("Введите второе число: ");
-		int secondNumber = scan.nextInt();
-		
+	public double calcalateResult(int firstNumber, char mathOperator,
+									int secondNumber) {
 		double result = 0;
 
 		switch(mathOperator) {
