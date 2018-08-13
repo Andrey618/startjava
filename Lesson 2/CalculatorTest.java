@@ -11,27 +11,27 @@ public class CalculatorTest {
 		while(response.equals("да")) {
 			            	
 			System.out.print("Введите первое число: ");
-			calc.firstNumber = scan.nextInt();
+			calc.setFirstNumber(scan.nextInt());
 
 			System.out.print("Введите знак математической операции: ");
-			calc.mathOperator = scan.next().charAt(0);
+			calc.setMathOperator(scan.next().charAt(0));
 
 			System.out.print("Введите второе число: ");
-			calc.secondNumber = scan.nextInt();
+			calc.setSecondNumber(scan.nextInt());
 
 			System.out.println("Получилось: " + calc.calculateResult());
 			System.out.println();
-			response = "что-то еще";
-			while ((!response.equals("да")) && (!response.equals("нет"))){
+			// response = "что-то еще";
+			while ((!response.equals("да")) || (!response.equals("нет"))) {
 				System.out.println("Хотите продолжить? [да/нет]: ");
 				response = scan.next();
 				if (response.equals("нет")) {
-					System.out.println("Удачи!");
 					break;	
 				} else if (response.equals("да")) {
 					break;
 				} else System.out.println(response + " - это неправильный вариант");				
 			}
 		}
+		System.out.println("Удачи!");
 	}
 }

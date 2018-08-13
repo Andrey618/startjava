@@ -1,8 +1,18 @@
 public class Calculator {	
-	int firstNumber; // здесь не может быть private, т.к. не используем геттеры
-	char mathOperator;
-	int secondNumber;
+	private int firstNumber; 
+	private char mathOperator;
+	private int secondNumber;
 	
+	public void setFirstNumber(int firstNumber) {
+		this.firstNumber = firstNumber;
+	}
+	public void setMathOperator(char mathOperator) {
+		this.mathOperator = mathOperator;
+	}
+	public void setSecondNumber(int secondNumber) {
+		this.secondNumber = secondNumber;
+	}
+
 	public double calculateResult() {
 		double result = 0;
 
