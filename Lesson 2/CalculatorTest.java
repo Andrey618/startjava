@@ -21,7 +21,7 @@ public class CalculatorTest {
 
 			System.out.println("Получилось: " + calc.calculateResult());
 			System.out.println();
-			// response = "что-то еще";
+			
 			while ((!response.equals("да")) || (!response.equals("нет"))) {
 				System.out.println("Хотите продолжить? [да/нет]: ");
 				response = scan.next();
