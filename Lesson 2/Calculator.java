@@ -1,5 +1,5 @@
 public class Calculator {	
-	int firstNumber;
+	int firstNumber; // здесь не может быть private, т.к. не используем геттеры
 	char mathOperator;
 	int secondNumber;
 	
