@@ -23,12 +23,16 @@ public class CalculatorTest {
 			while ((!response.equals("да")) || (!response.equals("нет"))) {
 				System.out.print("Хотите продолжить? [да/нет]: ");
 				response = scan.next();
-				if (response.equals("нет")) {
-					break;	
-				} else if (response.equals("да")) {
-					break;
-				}
-				 else System.out.println(response + " - это неправильный вариант \n");				
+				if ((!response.equals("да")) || (!response.equals("нет"))) {
+					System.out.println(response + " - это неправильный вариант \n");
+				} else break;
+
+				// if (response.equals("нет")) {
+				// 	break;	
+				// } else if (response.equals("да")) {
+				// 	break;
+				// }
+				//  else System.out.println(response + " - это неправильный вариант \n");				
 			}
 		}
 		System.out.println("Удачи!");
