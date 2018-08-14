@@ -8,7 +8,7 @@ public class CalculatorTest {
 		Calculator calc = new Calculator();
 		Scanner scan = new Scanner(System.in);
 		
-		while(response.equals("да")) {
+		do {
 			System.out.print("Введите первое число: ");
 			calc.setFirstNumber(scan.nextInt());
 
@@ -20,18 +20,12 @@ public class CalculatorTest {
 
 			System.out.println("Получилось: " + calc.calculateResult() + "\n");
 			
-			while ((!response.equals("да")) && (!response.equals("нет"))) {
-				System.out.print("Хотите продолжить? [да/нет]: ");
+			do {
+				System.out.print("#2 Хотите продолжить? [да/нет]: ");
 				response = scan.next();
-		  
-				// if (response.equals("нет")) {
-				// 	break;	
-				// } else if (response.equals("да")) {
-				// 	break;
-				// } else
-				System.out.println(response + " - это неправильный вариант \n");				
-			}
-		}
+			} while ((!response.equals("да")) && (!response.equals("нет")));
+			
+		} while(response.equals("да"));
 		System.out.println("Удачи!");
 	}
 }
