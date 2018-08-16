@@ -1,22 +1,9 @@
 public class JaegerTest {
 
 	public static void main(String[] args) {
-		Jaeger jaegerOne = new Jaeger();		
-		jaegerOne.setModelName("Bracer Phoenix");
-		jaegerOne.setMark("Mark-5");
-		jaegerOne.setOrigin("USA");
-		jaegerOne.setHeight(70.7f);
-		jaegerOne.setWeight(2128f);
-		jaegerOne.setArmour(9);
-		
-		Jaeger jaegerTwo = new Jaeger();		
-		jaegerTwo.setModelName("Striker Eureka");
-		jaegerTwo.setMark("Mark-5");
-		jaegerTwo.setOrigin("Australia");
-		jaegerTwo.setHeight(76.2f);
-		jaegerTwo.setWeight(1.850f);
-		jaegerTwo.setArmour(9);
-		
+		Jaeger jaegerOne = new Jaeger("Bracer Phoenix", "Mark-5", "USA", 70.7f, 2128f, 9);	
+		Jaeger jaegerTwo = new Jaeger("Striker Eureka", "Mark-5", "Australia", 76.2f, 1.850f, 9);		
+
 		System.out.println("\njaegerOne");
 		System.out.println("modelName = " + jaegerOne.getModelName());
 		System.out.println("mark = " + jaegerOne.getMark());

@@ -6,32 +6,38 @@ public class Jaeger {
 	private float weight;
 	private int armour;
 
+	public Jaeger(String modelName, String mark, String origin, 
+									float height, float weight, int armour) {
+		modelName = modelName;
+		mark = mark;
+		origin = origin;
+		height = height;
+		weight = weight;
+		armour = armour;
+	}
+
 	public void setModelName(String modelName) {
-	// if (modelName == "") {
-	// 	System.out.println("в переменной: modelName - пустая строка");
-	// } else {
-		this.modelName = modelName;
-		// }
+		modelName = modelName;
 	}
 
 	public void setMark(String mark) {
-		this.mark = mark;
+		mark = mark;
 	}
 
 	public void setOrigin(String origin) {
-		this.origin = origin;
+		origin = origin;
 	}
 
 	public void setHeight(float height) {
-		this.height = height;
+		height = height;
 	}
 
 	public void setWeight(float weight) {
-		this.weight = weight;
+		weight = weight;
 	}
 
 	public void setArmour(int armour) {
-		this.armour = armour;
+		armour = armour;
 	}
 
 	public String getModelName() {
