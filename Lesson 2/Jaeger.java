@@ -7,7 +7,7 @@ public class Jaeger {
 	private int armour;
 
 	public Jaeger(String modelName, String mark, String origin, 
-									float height, float weight, int armour) {
+					float height, float weight, int armour) {
 		modelName = modelName;
 		mark = mark;
 		origin = origin;
@@ -16,29 +16,29 @@ public class Jaeger {
 		armour = armour;
 	}
 
-	public void setModelName(String modelName) {
-		modelName = modelName;
-	}
+	// public void setModelName(String modelName) {
+	// 	modelName = modelName;
+	// }
 
-	public void setMark(String mark) {
-		mark = mark;
-	}
+	// public void setMark(String mark) {
+	// 	mark = mark;
+	// }
 
-	public void setOrigin(String origin) {
-		origin = origin;
-	}
+	// public void setOrigin(String origin) {
+	// 	origin = origin;
+	// }
 
-	public void setHeight(float height) {
-		height = height;
-	}
+	// public void setHeight(float height) {
+	// 	height = height;
+	// }
 
-	public void setWeight(float weight) {
-		weight = weight;
-	}
+	// public void setWeight(float weight) {
+	// 	weight = weight;
+	// }
 
-	public void setArmour(int armour) {
-		armour = armour;
-	}
+	// public void setArmour(int armour) {
+	// 	armour = armour;
+	// }
 
 	public String getModelName() {
 		return modelName;
