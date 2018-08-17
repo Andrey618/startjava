@@ -8,12 +8,12 @@ public class Jaeger {
 
 	public Jaeger(String modelName, String mark, String origin, 
 					float height, float weight, int armour) {
-		modelName = modelName;
-		mark = mark;
-		origin = origin;
-		height = height;
-		weight = weight;
-		armour = armour;
+		this.modelName = modelName;
+		this.mark = mark;
+		this.origin = origin;
+		this.height = height;
+		this.weight = weight;
+		this.armour = armour;
 	}
 
 	public String getModelName() {
