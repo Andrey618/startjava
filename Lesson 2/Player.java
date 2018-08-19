@@ -11,7 +11,6 @@ public class Player {
 	// }
 
 	public String getName() {
-		name = "test";
 		return name;
 	}
 
@@ -20,6 +19,3 @@ public class Player {
 		return number;
 	}
 }
-
-//test git - from home Dell
-//test git - from home Dell
