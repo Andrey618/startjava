@@ -2,14 +2,10 @@ public class Player {
 	private String name;
 	private int number = 0;
 	
-	public Player(String name) {
-		this.name = name;
-	}
-
-	// public void setName(String name) {
-	// 	name = name;
-	// }
-
+	public Player(String name) { // Constructor for creating players
+		this.name = name;		 // "this" points that name is object field
+	}							 // and name is not argument camed in method
+	
 	public String getName() {
 		return name;
 	}
