@@ -4,7 +4,8 @@ public class Unicode {
         for (int i = 33; i <= 126; i++) {
            	System.out.print ((char) i + ", ");
         }
-        System.out.println();
-    }
 
+	    // String convert = Integer.toHexString(19673).toUpperCase();
+     //    System.out.println(convert);
+    }
 }
