@@ -1,8 +1,8 @@
 public class GuessNumberTest {	
 	
 	public static void main(String[] args) {
-		Player playerOne = new Player("Mr. First");
-		Player playerTwo = new Player("Mr. Second");
+		Player playerOne = new Player();
+		Player playerTwo = new Player();
 
 		GuessNumber game = new GuessNumber(playerOne, playerTwo);
 		game.startGame();

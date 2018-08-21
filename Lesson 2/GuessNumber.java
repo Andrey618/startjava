@@ -14,6 +14,12 @@ public class GuessNumber {
 	}
 
 	public void startGame() {
+		System.out.print("Первый игрок, введите свое имя: ");
+		playerOne.setName(scan.next());
+		
+		System.out.print("Второй игрок, введите свое имя: ");
+		playerTwo.setName(scan.next());
+		
 		System.out.println("\nКомпьютер загадал число: " 
 			+ compNumber);	
 	
