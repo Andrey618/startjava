@@ -2,16 +2,21 @@ public class Player {
 	private String name;
 	private int number = 0;
 	
-	public Player(String name) { // Constructor for creating players
-		this.name = name;		 // "this" points that name is object field
-	}							 // and name is not argument camed in method
+	// Конструктор - для инициализации полей объекта валидными 
+	// значениями при его создании
+	public Player(String name) { 
+		this.name = name; 
+	}							 
 	
 	public String getName() {
 		return name;
 	}
 
+	public void setNumber(int number) {
+		this.number = number;
+	}
+
 	public int getNumber() {
-		number = (int) (Math.random() * 100);
 		return number;
 	}
 }
