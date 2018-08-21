@@ -4,12 +4,9 @@ public class Player {
 	
 	// Конструктор - для инициализации полей объекта валидными 
 	// значениями при его создании
-	public Player() { 
-		// this.name = name; 
+	public Player(String name) { 
+		this.name = name; 
 	}							 
-	public void setName(String name) {
-		this.name = name;
-	}
 
 	public String getName() {
 		return name;
