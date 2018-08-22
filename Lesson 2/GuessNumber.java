@@ -3,11 +3,12 @@ import java.util.Scanner;
 public class GuessNumber {	
 	Player playerOne;
 	Player playerTwo;
-	int compNumber = (int) (Math.random() * 100);
+	int compNumber;
 	int userNumber;
 	int userCounter = 0;
 	Scanner scan = new Scanner(System.in);
-	boolean gameOver = false;
+	String response = "да";
+	boolean gameOver;
 
 	public GuessNumber(Player playerOne, Player playerTwo) {
 		this.playerOne = playerOne;
@@ -15,19 +16,31 @@ public class GuessNumber {
 	}
 
 	public void startGame() {
-		System.out.println("\nКомпьютер загадал число: " 
-			+ compNumber);	
-	
-		do {
-			System.out.println("\nНачало следующего круга игры Угадай число");
-			do {
-				workWithPlayer(playerOne);
-				userCounter++;
-				workWithPlayer(playerTwo);
-				userCounter++;
-			} while (userCounter % 2 != 0);
 			
-		} while (gameOver != true);
+		do {
+			gameOver = false;
+			compNumber = (int) (Math.random() * 100);
+			System.out.println("\nКомпьютер загадал число: " 
+			+ compNumber);	
+			do {
+				System.out.println("\nНачало следующего круга игры Угадай число");
+				do {
+					workWithPlayer(playerOne);
+					userCounter++;
+					workWithPlayer(playerTwo);
+					userCounter++;
+				} while (userCounter % 2 != 0);
+				
+			} while (gameOver != true);
+
+			do {
+				System.out.print("Хотите продолжить? [да/нет]: ");
+				response = scan.next();
+			} while ((!response.equals("да")) && (!response.equals("нет")));
+			
+		} while(response.equals("да"));
+		System.out.println("Удачи!");
+
 	}
 
 	public void workWithPlayer (Player player) {
