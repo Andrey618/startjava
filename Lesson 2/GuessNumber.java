@@ -7,7 +7,7 @@ public class GuessNumber {
 	int userNumber;
 	int userCounter = 0;
 	Scanner scan = new Scanner(System.in);
-	String response = "да";
+	// String response = "да";
 	boolean gameOver;
 
 	public GuessNumber(Player playerOne, Player playerTwo) {
@@ -17,7 +17,7 @@ public class GuessNumber {
 
 	public void startGame() {
 			
-		do {
+		// do {
 			gameOver = false;
 			compNumber = (int) (Math.random() * 100);
 			System.out.println("\nКомпьютер загадал число: " 
@@ -33,13 +33,13 @@ public class GuessNumber {
 				
 			} while (gameOver != true);
 
-			do {
-				System.out.print("Хотите продолжить? [да/нет]: ");
-				response = scan.next();
-			} while ((!response.equals("да")) && (!response.equals("нет")));
+			// do {
+			// 	System.out.print("Хотите продолжить? [да/нет]: ");
+			// 	response = scan.next();
+			// } while ((!response.equals("да")) && (!response.equals("нет")));
 			
-		} while(response.equals("да"));
-		System.out.println("Удачи!");
+		// } while(response.equals("да"));
+		// System.out.println("Удачи!");
 
 	}
 
