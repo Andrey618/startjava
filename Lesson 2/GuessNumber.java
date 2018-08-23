@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class GuessNumber {	
 	Player playerOne;
 	Player playerTwo;
-	int compNumber;
+	private int compNumber;
 	Scanner scan = new Scanner(System.in);
-	boolean isWin;
+	private boolean isWin;
 
 	public GuessNumber(Player playerOne, Player playerTwo) {
 		this.playerOne = playerOne;

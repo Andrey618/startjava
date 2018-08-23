@@ -21,7 +21,6 @@ public class GuessNumberTest {
 				System.out.print("Хотите продолжить? [да/нет]: ");
 				response = scan.next();
 			} while ((!response.equals("да")) && (!response.equals("нет")));
-			
 
 		} while(response.equals("да"));
 		System.out.println("Удачи!");
