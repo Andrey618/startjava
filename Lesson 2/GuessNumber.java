@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 public class GuessNumber {	
-	Player playerOne;
-	Player playerTwo;
+	private Player playerOne;
+	private Player playerTwo;
 	private int compNumber;
-	Scanner scan = new Scanner(System.in);
 	private boolean isWin;
+	private Scanner scan = new Scanner(System.in);
 
 	public GuessNumber(Player playerOne, Player playerTwo) {
 		this.playerOne = playerOne;
