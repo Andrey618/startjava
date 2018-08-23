@@ -5,10 +5,8 @@ public class GuessNumber {
 	Player playerTwo;
 	int compNumber;
 	int userNumber;
-	int userCounter = 0;
 	Scanner scan = new Scanner(System.in);
-	// String response = "да";
-	boolean gameOver;
+	boolean isWin;
 
 	public GuessNumber(Player playerOne, Player playerTwo) {
 		this.playerOne = playerOne;
@@ -16,39 +14,27 @@ public class GuessNumber {
 	}
 
 	public void startGame() {
-			
-		// do {
-			gameOver = false;
+			isWin = false;
 			compNumber = (int) (Math.random() * 100);
 			System.out.println("\nКомпьютер загадал число: " 
 			+ compNumber);	
 			do {
-				System.out.println("\nНачало следующего круга игры Угадай число");
-				do {
-					workWithPlayer(playerOne);
-					userCounter++;
-					workWithPlayer(playerTwo);
-					userCounter++;
-				} while (userCounter % 2 != 0);
-				
-			} while (gameOver != true);
-
-			// do {
-			// 	System.out.print("Хотите продолжить? [да/нет]: ");
-			// 	response = scan.next();
-			// } while ((!response.equals("да")) && (!response.equals("нет")));
-			
-		// } while(response.equals("да"));
-		// System.out.println("Удачи!");
-
+				inputUserNumber(playerOne);
+				guessingNumber(playerOne);
+				inputUserNumber(playerTwo);
+				guessingNumber(playerTwo);
+			} while (!isWin);
 	}
 
-	public void workWithPlayer (Player player) {
+	public void inputUserNumber(Player player) {
 		System.out.print(player.getName() + ", введите число: ");
 		userNumber = scan.nextInt();
+	}
+
+	public void guessingNumber(Player player) {
 		if (userNumber == compNumber) {
 			System.out.println(player.getName() + ", Вы угадали, это число: " + userNumber);
-			gameOver = true;
+			isWin = true;
 		} else if (userNumber < compNumber) {
 			System.out.println(player.getName() + ", введенное Вами число меньше того, что загадал компьютер");
 		} else if (userNumber > compNumber) {

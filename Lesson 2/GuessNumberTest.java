@@ -3,8 +3,6 @@ import java.util.Scanner;
 public class GuessNumberTest {	
 
 	public static void main(String[] args) {
-		String response = "да";
-
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.print("Первый игрок, введите свое имя: ");
@@ -15,6 +13,7 @@ public class GuessNumberTest {
 
 		GuessNumber game = new GuessNumber(playerOne, playerTwo);
 		
+		String response = "да";
 		do {
 			game.startGame();
 
