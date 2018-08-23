@@ -4,7 +4,6 @@ public class GuessNumber {
 	Player playerOne;
 	Player playerTwo;
 	int compNumber;
-	// int userNumber;
 	Scanner scan = new Scanner(System.in);
 	boolean isWin;
 
@@ -24,7 +23,7 @@ public class GuessNumber {
 			inputUserNumber(playerTwo);
 			guessingNumber(playerTwo);
 		} while (!isWin);
-	}
+	} 
 
 	public void inputUserNumber(Player player) {
 		System.out.print(player.getName() + ", введите число: ");
