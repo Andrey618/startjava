@@ -3,12 +3,13 @@ import java.util.Scanner;
 public class CalculatorTest {	
 	
 	public static void main(String[] args) {
-		String response = "да";
-
 		Calculator calc = new Calculator();
 		Scanner scan = new Scanner(System.in);
 		
-		do {
+		String response = "да";
+		System.out.println("Калькулятор запущен!");
+
+		while(response.equals("да")) {
 			System.out.print("Введите первое число: ");
 			calc.setFirstNumber(scan.nextInt());
 
@@ -18,14 +19,12 @@ public class CalculatorTest {
 			System.out.print("Введите второе число: ");
 			calc.setSecondNumber(scan.nextInt());
 
-			System.out.println("Получилось: " + calc.calculateResult() + "\n");
+			calc.calculateResult();
 			
 			do {
-				System.out.print("#2 Хотите продолжить? [да/нет]: ");
+				System.out.print("Хотите продолжить? [да/нет]: ");
 				response = scan.next();
-			} while ((!response.equals("да")) && (!response.equals("нет")));
-			
-		} while(response.equals("да"));
-		System.out.println("Удачи!");
+			} while (!response.equals("да") && !response.equals("нет"));
+		} 
 	}
 }

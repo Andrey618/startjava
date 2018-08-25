@@ -13,33 +13,36 @@ public class Calculator {
 		this.secondNumber = secondNumber;
 	}
 
-	public double calculateResult() {
-		double result = 0;
-
+	public void calculateResult() {
 		switch(mathOperator) {
 			case '+': 
-				result = firstNumber + secondNumber;
+				System.out.println(firstNumber + secondNumber);
 				break;
 			case '-': 
-				result = firstNumber - secondNumber;
+				System.out.println(firstNumber - secondNumber);
 				break;
 			case '*': 
-				result = firstNumber * secondNumber;
+				System.out.println(firstNumber * secondNumber);
 				break;
 			case '/': 
-				result = (double)firstNumber / secondNumber;
+				System.out.println((double)firstNumber / secondNumber);
 				break;
 			case '^': 
-				result = 1;
-				for (int i = 1; i <= secondNumber; i++) {
-					result *= firstNumber;
-				}
+				pow();
 				break;
 			case '%': 
-				result = firstNumber % secondNumber;
+				System.out.println(firstNumber % secondNumber);
 				break;
+			default:
+				System.out.println("Ошибка, введен некорректный знак операции!");
 		}
-		
-		return result;
+	}
+
+	private void pow() {
+		int result = 1;
+		for (int i = 1; i <= secondNumber; i++) {
+			result *= firstNumber;
+		}
+		System.out.println(result);
 	}
 }
