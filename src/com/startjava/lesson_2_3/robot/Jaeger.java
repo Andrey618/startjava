@@ -1,3 +1,5 @@
+package com.startjava.lesson_1.robot;
+
 public class Jaeger {
 	private String modelName;
 	private String mark;
@@ -56,5 +58,15 @@ public class Jaeger {
 
 	public String scanKiju() {
 		return "nothing";
+	}
+
+	public String toString() {
+		return "Main{" +
+			"modelName='" + modelName + '\'' +
+			", mark='" + mark + '\'' + 
+			", origin='" + origin + '\'' +
+			", height=" + height + 
+			", weight=" + weight +
+			"}";			
 	}
 }

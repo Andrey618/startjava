@@ -1,3 +1,5 @@
+package com.startjava.lesson_1.robot;
+
 public class JaegerTest {
 
 	public static void main(String[] args) {
@@ -27,5 +29,8 @@ public class JaegerTest {
 		System.out.println("jaegerTwo, " + jaegerTwo.drift());
 		jaegerTwo.move();
 		System.out.println("jaegerTwo, " + jaegerTwo.scanKiju());
+
+		System.out.println(jaegerOne);
+		System.out.println(jaegerTwo);
 	}
 }
